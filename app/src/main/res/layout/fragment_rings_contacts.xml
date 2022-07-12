@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/NeutralsAquaSpring">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ring_3_layout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/ic_ring3"
+        app:layout_constraintBottom_toBottomOf="@+id/ring_2_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/ring_1_layout"
+        app:layout_constraintTop_toTopOf="@+id/ring_2_layout">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ring_2_layout"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_ring1"
+        app:layout_constraintEnd_toStartOf="@+id/ring_1_layout"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ring_2_title" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_bar_rings"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ring_1_layout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_ring2"
+        app:layout_constraintBottom_toBottomOf="@+id/ring_2_layout"
+        app:layout_constraintEnd_toStartOf="@+id/ring_3_layout"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/ring_2_layout"
+        app:layout_constraintTop_toTopOf="@+id/ring_2_layout" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_border_gray_4dp"
+        android:ems="10"
+        android:hint="Search Contacts"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ring_3_image3" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:tint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:srcCompat="@drawable/ic_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rings_contacts_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/ring_2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ring 2"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/ring_2_layout"
+        app:layout_constraintStart_toStartOf="@+id/ring_2_layout"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/ring_1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ring 1"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ring_2_title"
+        app:layout_constraintEnd_toEndOf="@+id/ring_1_layout"
+        app:layout_constraintStart_toStartOf="@+id/ring_1_layout"
+        app:layout_constraintTop_toTopOf="@+id/ring_2_title" />
+
+    <TextView
+        android:id="@+id/ring_3_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ring 3"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ring_2_title"
+        app:layout_constraintEnd_toEndOf="@+id/ring_3_layout"
+        app:layout_constraintStart_toStartOf="@+id/ring_3_layout"
+        app:layout_constraintTop_toTopOf="@+id/ring_2_title" />
+
+    <ImageView
+        android:id="@+id/ring_3_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:tint="@color/DimGray"
+        app:layout_constraintEnd_toEndOf="@+id/ring_3_layout"
+        app:layout_constraintStart_toStartOf="@+id/ring_3_layout"
+        app:layout_constraintTop_toTopOf="@+id/ring_3_image3"
+        app:srcCompat="@drawable/ic_friend" />
+
+    <ImageView
+        android:id="@+id/ring_3_image2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:tint="@color/DimGray"
+        app:layout_constraintEnd_toEndOf="@+id/ring_1_layout"
+        app:layout_constraintStart_toStartOf="@+id/ring_1_layout"
+        app:layout_constraintTop_toTopOf="@+id/ring_3_image3"
+        app:srcCompat="@drawable/ic_friend" />
+
+    <ImageView
+        android:id="@+id/ring_3_image3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:tint="@color/DimGray"
+        app:layout_constraintEnd_toEndOf="@+id/ring_2_layout"
+        app:layout_constraintStart_toStartOf="@+id/ring_2_layout"
+        app:layout_constraintTop_toBottomOf="@+id/ring_2_layout"
+        app:srcCompat="@drawable/ic_friend" />
+
+    <TextView
+        android:id="@+id/ring_3_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24"
+        android:textColor="@color/DimGray"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ring_3_image"
+        app:layout_constraintStart_toEndOf="@+id/ring_3_image"
+        app:layout_constraintTop_toTopOf="@+id/ring_3_image" />
+
+    <TextView
+        android:id="@+id/ring_3_count2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textColor="@color/DimGray"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ring_3_image2"
+        app:layout_constraintStart_toEndOf="@+id/ring_3_image2"
+        app:layout_constraintTop_toTopOf="@+id/ring_3_image2" />
+
+    <TextView
+        android:id="@+id/ring_3_count3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textColor="@color/DimGray"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ring_3_image3"
+        app:layout_constraintStart_toEndOf="@+id/ring_3_image3"
+        app:layout_constraintTop_toTopOf="@+id/ring_3_image3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

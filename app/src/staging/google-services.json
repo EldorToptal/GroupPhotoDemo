@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "707077484174",
+    "firebase_url": "https://group-photo-prod.firebaseio.com",
+    "project_id": "group-photo-prod",
+    "storage_bucket": "group-photo-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707077484174:android:ad4ad5f97aa61f38cce3df",
+        "android_client_info": {
+          "package_name": "com.groupphoto.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707077484174-tjjct6o5vrlk3quoil819rl9j8lo5lop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groupphoto.app",
+            "certificate_hash": "8383e075fbf0134572ad1e7c1ae5b704b50f27d9"
+          }
+        },
+        {
+          "client_id": "707077484174-4qcbarj3fsecnluu5sm761b8u8p503j3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa0BeLuFPWrw5EbcsewB2GG9el0qygqdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707077484174-4qcbarj3fsecnluu5sm761b8u8p503j3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "707077484174-l4lbaev16v98tei117a8j6gamj6qui8h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groupphoto.Group-Photo",
+                "app_store_id": "1117658472"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

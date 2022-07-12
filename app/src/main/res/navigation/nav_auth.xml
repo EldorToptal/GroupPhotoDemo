@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.groupphoto.app.presentation.auth.AuthFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_auth">
+        <action
+            android:id="@+id/login_to_signup"
+            app:destination="@id/signEmailFragment" />
+        <action
+            android:id="@+id/login_to_loginemail"
+            app:destination="@id/loginWithEmailFragment" />
+        <action
+            android:id="@+id/login_to_loginpassword"
+            app:destination="@id/loginWithEmailPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+        <action
+            android:id="@+id/login_to_signupemail"
+            app:destination="@id/signupWithEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signEmailFragment"
+        android:name="com.groupphoto.app.presentation.auth.SignEmailFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/signup_to_login"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/signup_to_signupemail"
+            app:destination="@id/signupWithEmailFragment" />
+        <action
+            android:id="@+id/signup_to_register_password"
+            app:destination="@id/signupWithEmailPasswordFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+        <argument
+            android:name="isLogin"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginWithEmailFragment"
+        android:name="com.groupphoto.app.presentation.auth.login.LoginWithEmailFragment"
+        android:label="fragment_login_email"
+        tools:layout="@layout/fragment_login_email" />
+    <fragment
+        android:id="@+id/signupWithEmailFragment"
+        android:name="com.groupphoto.app.presentation.auth.signup.SignupWithEmailFragment"
+        android:label="fragment_signup_email"
+        tools:layout="@layout/fragment_signup_email" />
+    <fragment
+        android:id="@+id/loginWithEmailPasswordFragment"
+        android:name="com.groupphoto.app.presentation.auth.login.LoginWithEmailPasswordFragment"
+        android:label="fragment_login_email_password"
+        tools:layout="@layout/fragment_login_email_password" />
+    <fragment
+        android:id="@+id/signupWithEmailPasswordFragment"
+        android:name="com.groupphoto.app.presentation.auth.signup.SignupWithEmailPasswordFragment"
+        android:label="fragment_register_with_email_password"
+        tools:layout="@layout/fragment_register_with_email_password" />
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="com.groupphoto.app.presentation.auth.policy.PolicyFragment"
+        android:label="@string/TermsOfService"
+        tools:layout="@layout/fragment_policy" />
+
+</navigation>

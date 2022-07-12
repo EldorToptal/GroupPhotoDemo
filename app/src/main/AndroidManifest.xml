@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.groupphoto.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".GroupPhoto"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/AppName"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".presentation.MainActivity"
+            android:exported="true" >
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <service
+            android:name=".util.BackupScheduler"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity
+            android:name=".presentation.MainRouterActivity"
+            android:theme="@style/Splash"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.auth.AuthActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".presentation.landing.LandingActivity" />
+        <activity android:name=".presentation.web.WebAppActivity" />
+        <activity android:name=".presentation.main.pools.GalleryActivity" />
+        <activity android:name=".presentation.main.pools.PoolSettingsActivity" />
+        <activity android:name=".presentation.main.pools.PoolColorPickerActivity" />
+        <activity android:name=".presentation.main.pools.LocalContactsActivity" />
+        <activity android:name=".presentation.main.pools.ViewImageActivity" />
+        <activity android:name=".presentation.main.pools.InviteContactActivity" />
+        <activity android:name=".presentation.main.pools.NewPoolActivity" />
+        <activity android:name=".presentation.WebViewActivity" />
+        <activity android:name=".presentation.landing.BackupOptionsActivity">
+            <intent-filter android:label="Group Photo">
+
+                <action android:name="android.intent.action.VIEW" />
+
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+
+                <data
+                    android:host="groupphoto.page.link"
+                    android:scheme="https" />
+                <data
+                    android:host="groupphotostaging.page.link"
+                    android:scheme="https" />
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

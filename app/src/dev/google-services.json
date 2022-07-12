@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "601223379971",
+    "firebase_url": "https://group-photo-dev.firebaseio.com",
+    "project_id": "group-photo-dev",
+    "storage_bucket": "group-photo-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601223379971:android:36dae338a9c2b869ed2236",
+        "android_client_info": {
+          "package_name": "com.groupphoto.app.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601223379971-jf2skmpqa927j3t8oklril9ep1p62jhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjcjfiPNqYA6DVu60ecxeP9hFaGGQHBnE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601223379971-jf2skmpqa927j3t8oklril9ep1p62jhv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "601223379971-vudbc18m6p0svck4rq8ijoduk43gul7i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groupphoto.Group-Photo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

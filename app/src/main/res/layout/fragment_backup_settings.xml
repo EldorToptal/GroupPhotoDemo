@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Toolbar
+        android:id="@+id/tbBackup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:navigationIcon="@drawable/ic_back"
+        app:layout_constraintBottom_toTopOf="@id/ivCloudBackUp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/book"
+            android:text="@string/BackupSettings"
+            android:textAllCaps="false"
+            android:textColor="@color/DarkBlue"
+            android:textSize="20sp" />
+    </Toolbar>
+
+
+    <ImageView
+        android:id="@+id/ivCloudBackUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_cloud_backup"
+        app:layout_constraintBottom_toTopOf="@id/llBackUpActions"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbBackup" />
+
+    <LinearLayout
+        android:id="@+id/llBackUpActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCloudBackUp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBackupStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/GrayscaleMineShaft"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/llBackUpState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_rounded_light_link_4dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ivBackupState"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_play" />
+
+                <TextView
+                    android:id="@+id/tvBackUpState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textSize="16dp"
+                    tools:text="Pause Uploaded" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pbUploadingImage"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="16dp"
+            android:indeterminate="false"
+            android:indeterminateTintMode="src_in"
+            android:max="100"
+            android:progress="0"
+            android:progressBackgroundTint="@color/LinkWater"
+            android:progressDrawable="@drawable/bg_gradient_progress"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/ivBackupState"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvBackupStatus"
+            app:layout_constraintTop_toBottomOf="@+id/tvBackupStatus"
+            tools:progress="30" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvFileSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/book"
+                android:textColor="@color/PoloBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tvPercentage"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Uploading 1,150 items (2GB)" />
+
+            <TextView
+                android:id="@+id/tvPercentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/book"
+                android:gravity="end"
+                android:textColor="@color/PoloBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toRightOf="@id/tvFileSize"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="40%" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <com.groupphoto.app.components.GroupPhotoSelectionView
+        android:id="@+id/svBackUpOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnSave"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llBackUpActions"
+        app:selectionTypes="title"
+        app:titles="@array/BackUpOptions" />
+
+    <com.groupphoto.app.components.GroupPhotoButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:buttonColor="@color/colorPrimary"
+        app:buttonText="@string/Save"
+        app:buttonTextColor="@color/white"
+        app:buttonTextSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/bg_toolbar_shadow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbBackup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

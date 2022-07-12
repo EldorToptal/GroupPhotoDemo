@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/border_grey_4dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/ivInputType"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            tools:src="@drawable/ic_letter" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlGroupPhoto"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/teGroupPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:labelFor="@id/tlGroupPhoto"
+                android:lines="1"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/GrayscaleMineShaft" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/ivError"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_warning"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/book_italic"
+        android:textColor="@color/SolidRed"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+</LinearLayout>

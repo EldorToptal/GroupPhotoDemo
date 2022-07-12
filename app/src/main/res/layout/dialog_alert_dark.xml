@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/dialog_alert"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#424242">
+
+	<TextView
+		android:id="@+id/dialert_text_symbol"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="24dp"
+		android:layout_marginEnd="9dp"
+		android:fontFamily="@font/bold"
+		android:gravity="center"
+		android:includeFontPadding="false"
+		android:text="i"
+		android:textColor="@color/status_info"
+		android:textSize="24sp"
+		app:layout_constraintBottom_toBottomOf="@+id/dialert_text_title"
+		app:layout_constraintEnd_toStartOf="@+id/dialert_text_title"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/dialert_text_title" />
+
+	<TextView
+		android:id="@+id/dialert_text_title"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		android:layout_marginEnd="24dp"
+		android:fontFamily="@font/bold"
+		android:gravity="center_vertical"
+		android:includeFontPadding="false"
+		android:text="Title"
+		android:textColor="@android:color/white"
+		android:textSize="21sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/dialert_text_symbol"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/dialert_text_message"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="24dp"
+		android:layout_marginEnd="32dp"
+		android:fontFamily="@font/medium"
+		android:gravity="center"
+		android:lineSpacingExtra="4sp"
+		android:text="message"
+		android:textColor="@android:color/white"
+		android:textSize="15sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/dialert_text_title" />
+
+	<Button
+		android:id="@+id/dialert_button_negative"
+		style="@android:style/Widget.Material.Button.Borderless"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginBottom="16dp"
+		android:fontFamily="@font/bold"
+		android:text="CANCEL"
+		android:textColor="#757575"
+		android:textSize="15sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/dialert_button_positive"
+		app:layout_constraintTop_toBottomOf="@+id/dialert_text_message"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<Button
+		android:id="@+id/dialert_button_positive"
+		style="@android:style/Widget.Material.Button.Borderless"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:fontFamily="@font/bold"
+		android:text="OK"
+		android:textColor="@color/status_info"
+		android:textSize="15sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/dialert_text_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

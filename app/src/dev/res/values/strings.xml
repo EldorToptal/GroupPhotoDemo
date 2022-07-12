@@ -1,0 +1,12 @@
+<resources>
+    <string name="AppName">Group Photo Dev</string>
+
+    <!-- region  Constant Values -->
+    <string name="FirebaseBaseUrl">https://group-photo-dev.firebaseapp.com/</string>
+    <string name="PackageName">com.groupphoto.app.dev</string>
+
+    <string name="WebClientId">601223379971-jf2skmpqa927j3t8oklril9ep1p62jhv.apps.googleusercontent.com</string>
+    <string name="GoogleId">AIzaSyCjcjfiPNqYA6DVu60ecxeP9hFaGGQHBnE</string>
+    <!-- endregion-->
+
+</resources>

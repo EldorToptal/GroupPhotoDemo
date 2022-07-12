@@ -1,0 +1,91 @@
+<resources>
+    <string name="AppName">Group Photo</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- region Constants Prod mode -->
+    <string name="FirebaseBaseUrl">https://group-photo-prod.firebaseapp.com/</string>
+    <string name="PackageName">com.groupphoto.app</string>
+
+    <string name="WebClientId">707077484174-4qcbarj3fsecnluu5sm761b8u8p503j3.apps.googleusercontent.com</string>
+    <string name="WebClientIdDev">601223379971-jf2skmpqa927j3t8oklril9ep1p62jhv.apps.googleusercontent.com</string>
+    <string name="WebClientSecret">HVfag2b3bPRmgQGNO5u7NN8P</string>
+    <string name="GoogleId">AIzaSyCjcjfiPNqYA6DVu60ecxeP9hFaGGQHBnE</string>
+    <string name="TermsOfServiceUrl">https://groupphoto.com/legal/terms-of-service</string>
+    <!--    endregion-->
+
+    <string name="Save">Save</string>
+    <string name="Cancel">Cancel</string>
+
+    <!-- region Login -->
+    <string name="SignUpWelcome">Sharing what matters.</string>
+    <string name="SignUpGoogle">Sign up with Google</string>
+    <string name="SignUpFacebook">Sign up with Facebook</string>
+    <string name="SignUpEmail">Sign up with Email</string>
+    <string name="SignUpApple">Sign up with Apple</string>
+    <string name="SignUp">Sign up</string>
+    <string name="TermsLabel">We care deeply about your privacy</string>
+    <string name="NoAccount">Don\'t have an account?</string>
+    <string name="TermsOfService">Terms of Service</string>
+    <string name="Policy">Privacy Policy</string>
+    <string name="CarePrivacy">We care deeply about your privacy</string>
+    <string name="ProtectData">How we protect your data</string>
+    <string name="LoginWelcome">Welcome back.</string>
+    <string name="LoginWithGoogle">Log in with Google</string>
+    <string name="LoginFacebook">Log in with Facebook</string>
+    <string name="LoginWithEmail">Log in with Email</string>
+    <string name="LoginWithApple">Log in with Apple</string>
+    <string name="AlreadyHaveAccount">Already have an account?</string>
+    <string name="Login">Log in</string>
+    <!-- endregion -->
+
+    <!-- region Backup Settings-->
+    <string name="BackupSettings">Back up settings</string>
+    <string name="BackupHistory">Back up history</string>
+    <string name="Logout">Log out</string>
+    <string name="ContactSupport">Contact support</string>
+    <string name="Backup">Back up</string>
+    <string name="BackupDisabled">Backing up: %1$s</string>
+    <string name="BackUpPaused">Back up: Paused</string>
+    <string name="Uploading">Uploading</string>
+    <string name="HowBackup">How would you like to back up?</string>
+    <string name="BackupEntire">Back up my entire library now.</string>
+    <string name="Backup100">Only back up 100 photos, for now, so I can play.</string>
+    <string name="BackUpFromHere">Only back up photos that I take from here on out, for now.</string>
+    <string name="NoBackup">Don\'t back up from this device</string>
+    <!--  endregion  -->
+
+
+    <!-- region Messages-->
+    <string name="BackButtonMessage">Pressing once more will be terminated.</string>
+    <string name="AccountExist">Account already exist.</string>
+    <string name="AuthenticationFailed">Authentication Failed</string>
+    <string name="FullFunctionality">Full functionality</string>
+    <string name="NoAds">No Ads</string>
+    <string name="GroupPhotoStandardInfo">Learn About Group Photo Standard</string>
+    <string name="FreePlan">Free Plan</string>
+    <string name="UpgradeInfo">Upgrade to Group Photo Standard</string>
+    <string name="LoginWithPassword">Log in with Password</string>
+    <string name="Password">Password</string>
+    <string name="WarningEmailInvalid">Email address is not valid.</string>
+    <string name="Email">Email</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="WarningRequiredField">This field is required</string>
+    <string name="Continue">Continue</string>
+    <string name="WelcomeBack">Welcome back</string>
+    <string name="PauseUpload">Pause Upload</string>
+    <string name="StartUpload">Start Upload</string>
+    <string name="Paused">Paused</string>
+    <string name="Enabled">Enabled</string>
+
+    <string name="default_notification_channel_id">Group Photo</string>
+    <string name="default_notification_channel_name">Group Photo</string>
+
+    <string name="UploadingPercent">%1$d \%</string>
+    <string name="FileSize">%1$02f MB</string>
+    <string name="Active">Active</string>
+    <string name="Completed">Completed</string>
+    <string name="Failed">Failed</string>
+    <string name="Unknown">Unkown</string>
+
+    <!-- endregion -->
+</resources>

@@ -1,0 +1,104 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion ConfigData.compileSdk
+    defaultConfig {
+        minSdkVersion ConfigData.minSdkVersion
+        targetSdkVersion ConfigData.targetSdk
+        versionCode ConfigData.versionCode
+        versionName ConfigData.releaseVersionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes.each {
+        it.buildConfigField "int", "DATABASE_VERSION", ConfigData.databaseVersion.toString()
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("$rootDir/gradleTools/key/groupphoto.jks")
+            storePassword "123456"
+            keyAlias "1"
+            keyPassword "123"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        staging {
+            initWith debug
+        }
+        dev {
+            initWith debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+dependencies {
+    implementation platform(ProjectDependencies.firebasebom)
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation ProjectDependencies.appcompat
+    implementation ProjectDependencies.kotlin
+    implementation ProjectDependencies.kotlin_coroutine_android
+    kapt ProjectDependencies.roomCompiler
+    implementation ProjectDependencies.room
+    implementation ProjectDependencies.roomKtx
+    implementation ProjectDependencies.retrofit2
+    implementation ProjectDependencies.okhttp
+    implementation ProjectDependencies.okhttp_logger
+    implementation ProjectDependencies.moshi
+    implementation ProjectDependencies.gson
+    implementation ProjectDependencies.okhttpLogger
+    implementation ProjectDependencies.commonsLang
+    implementation ProjectDependencies.commonsCollections
+    implementation ProjectDependencies.commonsIO
+    implementation ProjectDependencies.timber
+    implementation ProjectDependencies.pagingLibrary
+    implementation ProjectDependencies.pagingCommonLibrary
+    //Firebase
+    implementation platform(ProjectDependencies.firebaseBom)
+    implementation ProjectDependencies.firebaseFirestore
+    implementation ProjectDependencies.firebaseFunctions
+    implementation ProjectDependencies.firebaseStorage
+    implementation ProjectDependencies.firebaseStorageKtx
+    implementation ProjectDependencies.firebaseAuth
+    implementation ProjectDependencies.firebaseDynamicLinks
+    implementation ProjectDependencies.firebaseAnalytics
+    implementation ProjectDependencies.playService
+    implementation ProjectDependencies.kotPref
+    implementation ProjectDependencies.kotPrefGsonSupport
+    implementation ProjectDependencies.kotPrefEnum
+    implementation ProjectDependencies.kotlin_work
+    testImplementation ProjectDependencies.junit
+    testImplementation ProjectDependencies.mockito
+    testImplementation ProjectDependencies.truth
+    testImplementation ProjectDependencies.json
+    debugImplementation ProjectDependencies.chuck
+    releaseImplementation ProjectDependencies.chuckNoOp
+    androidTestImplementation TestDependencies.espresso
+    androidTestImplementation TestDependencies.rules
+    androidTestImplementation TestDependencies.runner
+    androidTestImplementation TestDependencies.extJunit
+    androidTestImplementation TestDependencies.testCore
+    androidTestImplementation TestDependencies.testKtx
+    androidTestImplementation TestDependencies.junitKtx
+    androidTestImplementation TestDependencies.espressoContrib
+
+
+
+
+}

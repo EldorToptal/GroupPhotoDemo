@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_landing"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.groupphoto.app.presentation.main.ActivityFragment"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/ringsFragment"
+        android:name="com.groupphoto.app.presentation.main.RingsFragment"
+        android:label="fragment_rings"
+        tools:layout="@layout/fragment_rings" />
+    <fragment
+        android:id="@+id/addPhotoFragment"
+        android:name="com.groupphoto.app.presentation.main.AddPhotoFragment"
+        android:label="fragment_add_item"
+        tools:layout="@layout/fragment_add_item" />
+    <fragment
+        android:id="@+id/poolsFragment"
+        android:name="com.groupphoto.app.presentation.main.PoolsFragment"
+        android:label="fragment_pools"
+        tools:layout="@layout/fragment_pools" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.groupphoto.app.presentation.main.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/selectPoolFragment"
+        android:name="com.groupphoto.app.presentation.main.SelectPoolFragment"
+        android:label="fragment_select_pools"
+        tools:layout="@layout/fragment_select_pools" />
+    <fragment
+        android:id="@+id/poolsListFragment"
+        android:name="com.groupphoto.app.presentation.main.PoolsListFragment"
+        android:label="fragment_pool_list"
+        tools:layout="@layout/fragment_pool_list" />
+
+    <fragment
+        android:id="@+id/backupSettingsFragment"
+        android:name="com.groupphoto.app.presentation.main.profile.BackupSettingsFragment"
+        android:label="fragment_backup_settings"
+        tools:layout="@layout/fragment_backup_settings" />
+
+    <fragment
+        android:id="@+id/backupHistoryFragment"
+        android:name="com.groupphoto.app.presentation.backuphistory.BackupHistoryFragment"
+        android:label="fragment_backup_history"
+        tools:layout="@layout/fragment_backup_history" />
+    <fragment
+        android:id="@+id/backUpOptionsFragment"
+        android:name="com.groupphoto.app.presentation.BackUpOptionsFragment"
+        android:label="Backup"
+        tools:layout="@layout/fragment_back_up_options" />
+</navigation>

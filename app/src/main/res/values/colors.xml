@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#1A88FF</color>
+    <color name="colorPrimaryDark">#1A88FF</color>
+    <color name="colorAccent">#1A88FF</color>
+
+    <color name="status_blank">#203033</color>
+    <color name="status_default">#308FA2</color>
+    <color name="status_info">#4A90E2</color>
+    <color name="status_confirmation">#784EC5</color>
+    <color name="status_warning">#FFD806</color>
+    <color name="status_error">#FF3366</color>
+    <color name="status_success">#7ED321</color>
+
+    <color name="NeutralsAquaSpring">#F5FBFC</color>
+    <color name="PoloBlue">#9BACD5</color>
+    <color name="LinkWater">#E5EDF8</color>
+    <color name="grey_selected2">#e3e3e3</color>
+    <color name="grey_deselected">#BDBDBD</color>
+    <color name="grey_icon">#BDBDBD</color>
+    <color name="grey_ground">#F5F5F5</color>
+    <color name="grey_shade">#2D2D2D</color>
+    <color name="dim">#80000000</color>
+
+    <color name="red_closed">@color/red</color>
+    <color name="blue_soon">#1553B6</color>
+    <color name="orange_fixed">#EB7E30</color>
+    <color name="yellow_mover">#F8C753</color>
+    <color name="blue_font">#4A90E2</color>
+    <color name="blue_pool_font">#407AFE</color>
+
+    <color name="blue_message_cell">#F0F4F8</color>
+
+    <color name="sportshero_light">#99FEE1</color>
+    <color name="sportshero_mid">#4AF9BA</color>
+    <color name="sportshero_dark">#15DBA2</color>
+
+    <color name="text_light_primary">#000000</color>
+    <color name="text_light_secondary">#757575</color>
+    <color name="xaxa_grey">#C2C2C2</color>
+    <color name="tab_gray">#a1a1a1</color>
+    <color name="tab_font_gray">#2A3239</color>
+    <color name="font_gray">#3E4F5E</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="grey">#ededed</color>
+    <color name="tabSelectedColor">#FFFF8D</color>
+    <color name="secondaryTextColor">#d6cbd6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+    <color name="OliveDrab">#6B8E23</color>
+    <color name="SlateBlue">#6A5ACD</color>
+    <color name="DimGray">#696969</color>
+    <color name="MediumAquamarine">#66CDAA</color>
+    <color name="CornflowerBlue">#6495ED</color>
+    <color name="CadetBlue">#5F9EA0</color>
+    <color name="DarkOliveGreen">#556B2F</color>
+    <color name="Indigo">#4B0082</color>
+    <color name="MediumTurquoise">#48D1CC</color>
+    <color name="DarkSlateBlue">#483D8B</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="RoyalBlue">#4169E1</color>
+    <color name="Turquoise">#40E0D0</color>
+    <color name="MediumSeaGreen">#3CB371</color>
+    <color name="LimeGreen">#32CD32</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="SeaGreen">#2E8B57</color>
+    <color name="ForestGreen">#228B22</color>
+    <color name="LightSeaGreen">#20B2AA</color>
+    <color name="DodgerBlue">#1E90FF</color>
+    <color name="MidnightBlue">#191970</color>
+    <color name="Aqua">#00FFFF</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="SpringGreen">#00FF7F</color>
+    <color name="Lime">#00FF00</color>
+    <color name="MediumSpringGreen">#00FA9A</color>
+    <color name="DarkTurquoise">#00CED1</color>
+    <color name="LinkBlue">#CAE4F1</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="DarkCyan">#008B8B</color>
+    <color name="Teal">#008080</color>
+    <color name="Green">#008000</color>
+    <color name="DarkGreen">#006400</color>
+    <color name="Blue">#0000FF</color>
+    <color name="MediumBlue">#0000CD</color>
+    <color name="Navy">#000080</color>
+    <color name="Black">#000000</color>
+    <color name="transparent_gray">#30000000</color>
+    <color name="bgColorBlue26">#C6C6C6</color>
+    <color name="GreyRippleColor">#DADADA</color>
+
+    <color name="GrayscaleMineShaft">#2B2B2B</color>
+    <color name="TextSub">#57585E</color>
+    <color name="DarkBlue">#062F5D</color>
+    <color name="GrayscaleSlateGray">#788E97</color>
+    <color name="SecondaryPoloBlue">#9BACD5</color>
+    <color name="SolidRed">#DD3C45</color>
+    <color name="LightLinkWater">#F6FAFF</color>
+    <color name="Denium">#1E53CB</color>
+    <color name="SolidGreen">#2A7B54</color>
+    <color name="LightGreen">#7CC5A2</color>
+
+    <color name="buttonDisabledColor">#CECED5</color>
+    <color name="buttonDisabledTextColor">#EAEAEA</color>
+    <color name="buttonMask">#4DFFFFFF</color>
+    <color name="LighterSub">#828497</color>
+    <color name="LighterGreen">#EEFFF2</color>
+
+    <color name="ColorConfirmed">#D32F2F</color>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AuthOptionView">
+        <attr name="authIcon" format="reference" />
+        <attr name="authTitle" format="string" />
+        <attr name="authTextSize" format="dimension" />
+        <attr name="authTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="GroupPhotoSelectionView">
+        <attr name="titles" format="reference" />
+        <attr name="subtitles" format="reference" />
+        <attr name="prices" format="reference" />
+        <attr name="selectionTypes" format="enum">
+            <enum name="title" value="0" />
+            <enum name="subscription" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MenuItemView">
+        <attr name="menuTitle" format="string" />
+        <attr name="menuIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="GroupPhotoButton">
+        <attr name="buttonColor" format="color" />
+        <attr name="buttonText" format="string" />
+        <attr name="buttonTextSize" format="dimension" />
+        <attr name="buttonTextColor" format="color" />
+        <attr name="buttonWithStroke" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="GroupPhotoToolbar">
+        <attr name="tbTitleColor" format="color" />
+        <attr name="tbTitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="GroupPhotoEditText">
+        <attr name="etHint" format="string" />
+        <attr name="etRequired" format="boolean" />
+        <attr name="etAllowedChars" format="string" />
+        <attr name="etInputTypes" format="enum">
+            <enum name="text" value="0" />
+            <enum name="email" value="1" />
+            <enum name="phone" value="2" />
+            <enum name="money" value="3" />
+            <enum name="password" value="4" />
+        </attr>
+    </declare-styleable>
+</resources>

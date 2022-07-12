@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".presentation.auth.signup.SignupWithEmailFragment">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/SignUpEmail"
+            android:textColor="@color/Black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/signup_email_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/signup_email_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/bg_border_gray_4dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="35dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/DimGray"
+            app:layout_constraintBottom_toTopOf="@+id/signup_email_validation_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/signup_phone_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/bg_border_gray_4dp"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:paddingLeft="35dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/DimGray"
+            app:layout_constraintBottom_toTopOf="@+id/signup_number_validation_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_email_validation_message" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/background_button_primary"
+            android:text="Continue"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/signup_email_validation_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Invalid Email format."
+            android:textColor="@color/red"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/signup_phone_field"
+            app:layout_constraintEnd_toEndOf="@+id/signup_email_field"
+            app:layout_constraintStart_toStartOf="@+id/signup_email_field"
+            app:layout_constraintTop_toBottomOf="@+id/signup_email_field" />
+
+        <TextView
+            android:id="@+id/signup_number_validation_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Invalid phone number."
+            android:textColor="@color/red"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/tvAuthOption"
+            app:layout_constraintEnd_toEndOf="@+id/signup_phone_field"
+            app:layout_constraintStart_toStartOf="@+id/signup_phone_field"
+            app:layout_constraintTop_toBottomOf="@+id/signup_phone_field" />
+
+        <ImageView
+            android:id="@+id/signup_email_back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_mail_black"
+            app:layout_constraintBottom_toBottomOf="@+id/signup_email_field"
+            app:layout_constraintStart_toStartOf="@+id/signup_email_field"
+            app:layout_constraintTop_toTopOf="@+id/signup_email_field" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_phone"
+            app:layout_constraintBottom_toBottomOf="@+id/signup_phone_field"
+            app:layout_constraintStart_toStartOf="@+id/signup_phone_field"
+            app:layout_constraintTop_toTopOf="@+id/signup_phone_field" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

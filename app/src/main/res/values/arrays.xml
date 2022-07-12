@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PaymentTitles">
+        <item>1TB Storage</item>
+        <item>2TB Storage</item>
+        <item>1TB Storage (Yearly)</item>
+        <item>2TB Storage (Yearly)</item>
+    </string-array>
+    <string-array name="PaymentSubtitles">
+        <item>1 Terabyte of backup storage</item>
+        <item>2 Terabyte of backup storage</item>
+        <item>1 Terabyte of backup storage</item>
+        <item>2 Terabyte of backup storage</item>
+    </string-array>
+    <string-array name="PaymentPrices">
+        <item>$10.99</item>
+        <item>$31.99</item>
+        <item>$99</item>
+        <item>$297.6</item>
+    </string-array>
+
+    <string-array name="BackUpOptions">
+        <item>Backup my entire library now</item>
+        <item>Only backup 100 photos for now,so I can play</item>
+        <item>Only backup photos that I take,from on out, for now</item>
+        <item>Don’t back up from this device</item>
+    </string-array>
+
+</resources>
